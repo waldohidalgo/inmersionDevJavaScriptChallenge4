@@ -1,0 +1,71 @@
+.contenedor__videos {
+  border-top: 2px solid white;
+  margin-top: 1rem;
+}
+.contenedor__videos__titulo {
+  font-family: "calistoga", sans-serif;
+  color: white;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.border-divided {
+  margin-top: 5px;
+  width: 80%; /* Ancho de tu elemento */
+  margin-left: auto;
+  margin-right: auto;
+  height: 5px; /* Altura de tu elemento */
+  background-image: linear-gradient(to right, blue 50%, yellow 50%);
+  background-size: 100% 2px; /* 2px para el grosor del borde inferior */
+  background-position: 0 100%; /* Alinea el borde en la parte inferior */
+  border: none; /* Elimina cualquier borde predeterminado */
+  @media screen and (min-width: 550px) {
+    width: 100%;
+  }
+}
+
+.contenedor__videos__titulo__gif {
+  border-radius: 50%;
+  width: 2rem;
+}
+
+.contenedor__videos__descripcion {
+  color: white;
+  font-family: "carter", sans-serif;
+  padding-bottom: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.contenedor__videos__descripcion__icono {
+  width: 2rem;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: -10px;
+}
+
+.swiper__titulo {
+  font-family: "carter", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+  -webkit-text-stroke: 2px black; /* Propiedad específica de WebKit (Chrome y Safari) */
+  text-stroke: 2px black;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.swiper__imagen {
+  width: 80%;
+  border-radius: 25px;
+  border: 2px solid blue;
+  transition: transform 1s;
+  max-height: 200px;
+}
+.swiper__imagen:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 13px 4px rgba(0, 0, 0, 0.75);
+}

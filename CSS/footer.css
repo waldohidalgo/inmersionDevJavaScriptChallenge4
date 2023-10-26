@@ -1,0 +1,57 @@
+/*Estilos Footer*/
+footer {
+  width: 100%;
+  background: rgb(10, 10, 10);
+  text-align: center;
+  padding-bottom: 3rem;
+}
+footer img {
+  margin: 10px 0 0 0;
+  width: 60%;
+  transition: transform 1s;
+  @media screen and (min-width: 550px) {
+    width: 30%;
+  }
+}
+
+footer img:hover {
+  transform: scale(1.1);
+}
+footer p {
+  padding: 20px 0 10px 0;
+  color: white;
+}
+
+footer .fa {
+  border-radius: 50%;
+  padding: 10px;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 28px;
+  transition: transform 1s;
+  outline: 2px solid white;
+  margin: 0 5px;
+}
+.fa:hover {
+  transform: scale(1.1);
+  outline-color: lightsalmon;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #e2002b;
+  color: white;
+}

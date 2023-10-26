@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>AluraTUBE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/footer.css" />
+    <link rel="stylesheet" href="./CSS/slider.css" />
+    <link rel="stylesheet" href="./CSS/contenedorslider/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="https://www.aluracursos.com/" target="_blank">
+        <img
+          src="https://www.aluracursos.com/assets/img/home/alura-logo.1686744883.svg"
+          alt=""
+          class="alura-latam-logo"
+        />
+      </a>
+      <h1 class="page-title">Alura<span style="color: red">TUBE</span></h1>
+      <img
+        src="https://user-images.githubusercontent.com/121910576/257302088-d2a9edb6-75e5-4118-aaba-6f53da7715dc.png"
+        class="page-logo"
+        alt=""
+      />
+      <div class="contenedor__videos" id="contenedor__videos__python">
+        <h1 class="contenedor__videos__titulo">
+          <img
+            src="./img/icons8-python.gif"
+            class="contenedor__videos__titulo__gif"
+          />
+          Selección videos de Python
+          <div class="border-divided"></div>
+        </h1>
+
+        <p class="contenedor__videos__descripcion">
+          <img
+            src="./img/icons8-lectura-100.png"
+            class="contenedor__videos__descripcion__icono"
+          />
+          A continuación verás una lista de videos seleccionados de Youtube para
+          aprender este gran lenguaje de programación general
+        </p>
+        <div class="swiper mySwiperPython">
+          <div class="swiper-wrapper" id="swiper__python"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="contenedor__formulario">
+        <h1 class="contenedor__formulario__titulo">
+          <img
+            src="./img/icons8-formulario.png"
+            class="contenedor__formulario__titulo__icono"
+          />Formulario para Agregar Videos
+        </h1>
+        <form id="formularioAgregar">
+          <label for="TituloVideo" class="contenedor__formulario__titulovideo"
+            >Titulo del Video a Agregar</label
+          >
+          <input type="text" id="TituloVideo" name="TituloVideo" />
+          <label
+            for="URLVideoYoutube"
+            class="contenedor__formulario__titulovideo"
+            >Ingresa la URL del Video en Youtube</label
+          >
+          <input type="text" id="URLVideoYoutube" />
+          <label
+            for="ImagenVideo"
+            class="contenedor__formulario_inputfile"
+            title="Seleccionar Imagen del PC"
+            >Seleccionar Imagen del Video</label
+          >
+          <input
+            type="file"
+            id="ImagenVideo"
+            name="ImagenVideo"
+            style="display: none"
+          />
+          <div class="contenedor__formulario__contenedorimagenpreview">
+            <img id="contenedor__formulario__imagenpreview" />
+          </div>
+
+          <input
+            class="contenedor__formulario__submit"
+            type="submit"
+            value="Agregar Video"
+            title="Agregar Video"
+          />
+        </form>
+      </div>
+      <div class="contenedor__formulario contenedor__formulario-eliminarvideo">
+        <h1 class="contenedor__formulario__titulo">
+          <img
+            src="./img/icons8-eliminar.png"
+            class="contenedor__formulario__titulo__icono contenedor__formulario__titulo__icono-eliminar"
+          />Formulario para Eliminar Videos
+        </h1>
+        <form id="formularioEliminar">
+          <label
+            for="SeleccionaVideoEliiminar"
+            class="contenedor__formulario__titulovideo"
+            >Selecciona Video a Eliminar</label
+          >
+          <select id="seleccionaPeliculaEliminar">
+            <option hidden value="Selecciona un Elemento">
+              Selecciona un elemento
+            </option>
+          </select>
+          <input
+            class="contenedor__formulario__submit"
+            type="submit"
+            value="Eliminar Video"
+            title="Eliminar Video"
+          />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://linktr.ee/waldohidalgo" target="_blank"
+        ><img src="./img/FirmaWaldo.png" width="20%"
+      /></a>
+      <p>
+        <span style="font-weight: 700"
+          >Alura<span style="color: red">TUBE</span></span
+        >
+        desarollado 100% por
+        <a
+          href="https://linktr.ee/waldohidalgo"
+          style="color: yellow; font-family: carter"
+          >Waldo Hidalgo Oyarce</a
+        >
+      </p>
+      <div class="redes sociales">
+        <a
+          href="https://www.linkedin.com/in/waldo-hidalgo-oyarce/"
+          target="_blank"
+          ><i class="fa fa-linkedin fa-xl"></i
+        ></a>
+        <a href="https://github.com/waldohidalgo/" target="_blank"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/clasestutoriaswaldo/" target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/waldohidalgooyarcej" target="_blank"
+          ><i class="fa fa-facebook"></i
+        ></a>
+      </div>
+      <p>
+        Iconos utilizados pertenecen a
+        <a href="https://iconos8.es/" target="_blank" style="color: yellowgreen"
+          >Icons8</a
+        >
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script type="module" src="./js/programming.js"></script>
+  </body>
+</html>

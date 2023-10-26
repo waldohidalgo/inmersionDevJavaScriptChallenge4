@@ -1,0 +1,185 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background-aluraflix.png");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+  font-size: 2.5rem;
+  font-family: "calistoga", sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  display: inline-block;
+  border-bottom: 2px solid yellow;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+.alura-latam-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@font-face {
+  font-family: "calistoga";
+  src: url("./Calistoga-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "carter";
+  src: url("./CarterOne-Regular.ttf") format("truetype");
+}
+
+.contenedor__formulario {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor__formulario > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  background-color: #d1c975;
+  border-radius: 35px;
+  @media screen and (min-width: 550px) {
+    width: 70%;
+  }
+}
+
+.contenedor__formulario__titulo {
+  font-family: "calistoga", sans-serif;
+  font-size: 2rem;
+  display: inline-block;
+  color: white;
+  padding-bottom: 2rem;
+  text-decoration: underline;
+}
+
+.contenedor__formulario__titulovideo {
+  font-size: 1.5rem;
+  color: black;
+  font-family: "carter", sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#TituloVideo,
+#URLVideoYoutube {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  width: 80%;
+  font-family: "calistoga", sans-serif;
+  @media screen and (min-width: 550px) {
+    width: 50%;
+  }
+}
+
+.contenedor__formulario__titulo__icono {
+  width: 2.5rem;
+}
+#ImagenVideo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.contenedor__formulario_inputfile {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 15px;
+  border: 2px solid black;
+  background-color: grey;
+  cursor: pointer;
+  font-size: 1rem;
+  color: black;
+  font-family: "carter", sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 50%;
+  @media screen and (min-width: 550px) {
+    width: 30%;
+  }
+}
+
+.contenedor__formulario_inputfile:hover {
+  background-color: red;
+  color: white;
+}
+
+.contenedor__formulario__submit {
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: red;
+  color: white;
+  border-color: white;
+  font-family: "calistoga", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.contenedor__formulario__submit:hover {
+  background-color: black;
+  color: white;
+}
+
+.contenedor__formulario__contenedorimagenpreview {
+  width: 50%;
+  @media screen and (min-width: 550px) {
+    width: 20%;
+  }
+}
+
+#contenedor__formulario__imagenpreview {
+  max-width: 100%;
+  height: auto;
+  border-radius: 35px;
+  margin-bottom: 1rem;
+}
+
+/*Estilos Formulario Eliminar Video*/
+
+.contenedor__formulario-eliminarvideo {
+  border-top: 2px solid white;
+}
+
+.contenedor__formulario__titulo__icono-eliminar {
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: -10px;
+}
+
+#seleccionaPeliculaEliminar {
+  padding: 8px;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
